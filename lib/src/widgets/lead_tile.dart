@@ -18,6 +18,7 @@ class LeadTile extends StatelessWidget {
           leading: Icon(Icons.people, size: 48,),
           title: Text(lead.firstName + " " + lead.lastName),
           subtitle: Text(lead.email),
+          trailing: Text(lead.activities.length.toString()),
           onTap: disableOnTap ? null : () {
             Navigator.push(
               context,
